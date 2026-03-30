@@ -1,1 +1,36 @@
+/* LearnPress Stats Dashboard – lp-stats.css v1.0.0 */
 
+.lp-stats-widget,
+.lp-stats-shortcode {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.lp-stats-title {
+    font-size: 1.1rem; font-weight: 700;
+    margin: 0 0 14px; color: #1d2327;
+}
+.lp-stats-grid {
+    display: flex; gap: 12px; flex-wrap: wrap;
+}
+.lp-stat-card {
+    flex: 1 1 120px;
+    display: flex; align-items: center; gap: 10px;
+    padding: 14px 16px; border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.lp-card-blue   { background:#EBF5FB; border-left:4px solid #2E86C1; }
+.lp-card-green  { background:#E9F7EF; border-left:4px solid #27AE60; }
+.lp-card-orange { background:#FEF9E7; border-left:4px solid #E67E22; }
+.lp-stat-icon   { font-size:1.8rem; line-height:1; }
+.lp-stat-info   { display:flex; flex-direction:column; }
+.lp-stat-number { font-size:1.7rem; font-weight:800; color:#1d2327; line-height:1; }
+.lp-stat-label  { font-size:.72rem; color:#555; margin-top:3px; text-transform:uppercase; letter-spacing:.03em; }
+.lp-stats-footer{ font-size:.72rem; color:#999; margin:10px 0 0; text-align:right; }
+
+/* Dark theme */
+.lp-theme-dark                { background:#1e1e2f; padding:20px; border-radius:10px; }
+.lp-theme-dark .lp-stats-title{ color:#e0e0e0; }
+.lp-theme-dark .lp-stat-card  { box-shadow:none; }
+.lp-theme-dark .lp-stat-number{ color:#fff; }
+.lp-theme-dark .lp-stat-label { color:#aaa; }
+
+@media(max-width:600px){ .lp-stats-grid{ flex-direction:column; } }
